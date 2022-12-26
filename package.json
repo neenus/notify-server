@@ -1,0 +1,30 @@
+{
+  "name": "notify_server",
+  "version": "1.0.0",
+  "description": "Server for receiving and sending monitoring alerts and notifications",
+  "main": "server.js",
+  "author": "Neenus Gabriel",
+  "license": "MIT",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "axios": "^1.2.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "morgan": "^1.10.0",
+    "twilio": "^3.84.0"
+  },
+  "devDependencies": {
+    "cz-conventional-changelog": "3.3.0",
+    "nodemon": "^2.0.20"
+  },
+  "type": "module",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
